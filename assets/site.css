@@ -200,8 +200,8 @@ p { margin: 0; }
 .ab-b .ab-list svg { color: var(--accent); }
 .ab-arrow { position: relative; display: flex; align-items: center; justify-content: flex-end; color: var(--accent); padding: 0 8px; }
 .ab-line { position: absolute; left: 8px; right: 18px; top: 50%; height: 2px; background: linear-gradient(90deg, rgba(240,39,28,0.1), var(--accent)); transform-origin: left; }
-.result-grid .h3 { margin-bottom: 18px; }
-.result-grid .need { margin-top: 0; border-top: 0; padding-top: 0; }
+.tasks-head { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px; align-items: end; margin-bottom: 18px; }
+.tasks-head .need { margin: 0; border-top: 0; padding-top: 0; justify-self: end; max-width: 30em; }
 
 /* ---------- Программа ---------- */
 .meta-line { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-bottom: 40px; font-size: 15px; color: var(--soft); }
@@ -373,7 +373,9 @@ p { margin: 0; }
   .logo { font-size: 19px; }
   .section { padding: 72px 0; }
   .hero { padding: 36px 0 64px; }
-  .hero-grid, .result-grid, .author, .final-grid, .section-head { grid-template-columns: 1fr; gap: 36px; }
+  .hero-grid, .result-grid, .author, .final-grid, .section-head, .tasks-head { grid-template-columns: 1fr; gap: 36px; }
+  .tasks-head { gap: 12px; }
+  .tasks-head .need { justify-self: start; }
   .section-head { gap: 16px; margin-bottom: 36px; }
   .section-head .lead { justify-self: start; }
   .portrait { justify-self: start; max-width: 340px; }
